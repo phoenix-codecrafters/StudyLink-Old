@@ -1,18 +1,20 @@
 import React from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Container, Col, Row, Image } from 'react-bootstrap';
 
 /* A simple static component to render some text for the landing page. */
 const Landing = () => (
-  <Container id="landing-page" className="py-3">
-    <Row className="">
-      <Col className="text-center">
+  <Container id="landing-page" className="my-auto py-3 d-flex justify-content-center">
+    <Row className="d-flex justify-content-center">
+      <Col xs={3} className="text-center align-content-center">
         <div>
           <h2>Welcome</h2>
-          <p>Desc</p>
+          <p>
+            Word. WORD. Word. WORD. Word. WORD. Word. WORD. Word. WORD. Word. WORD. Word. WORD. Word. WORD. Word. WORD. Word. WORD. Word. WORD. Word.
+          </p>
         </div>
       </Col>
-      <Col className="text-center">
-        <h5>image here</h5>
+      <Col xs={4}>
+        <Image src="/images/logo-only.png" />
       </Col>
     </Row>
   </Container>
